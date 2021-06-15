@@ -8,7 +8,7 @@ server.use('/', mainRoute);
 
 server.use(express.static(path.join(__dirname, 'public')));
 
-server.set('views', path.join(__dirname, 'html'));
+server.set('views', path.join(__dirname, 'views'));
 server.set('view engine', 'ejs');
 
 server.listen(8000);
